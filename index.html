@@ -229,8 +229,14 @@
         <div class="container">
           <div class="section__head">
             <h2 class="h2" data-i18n="privacy.title">Confidentialité</h2>
-            <p class="lead" data-i18n="privacy.subtitle">
-              Transparence sur les données utilisées par HomeDocs.
+            <p class="lead" data-i18n="privacy.intro.p1">
+              HomeDocs est conçu pour que vos documents restent privés. Les fichiers (PDF/images) et le texte OCR sont chiffrés côté app avec AES-GCM 256, et les clés sont protégées via le Trousseau iOS (Keychain).
+            </p>
+            <p class="lead" data-i18n="privacy.intro.p2">
+              La synchronisation iCloud est optionnelle et passe par CloudKit. Aucun document n’est utilisé à des fins publicitaires, et HomeDocs ne vend pas vos données.
+            </p>
+            <p class="lead" data-i18n="privacy.intro.p3">
+              Les exports .hdocs sont toujours chiffrés (avec ou sans mot de passe) afin d’éviter tout export en clair.
             </p>
           </div>
 
@@ -238,26 +244,129 @@
             <div class="privacy__box">
               <h3 data-i18n="privacy.p1.title">Vos documents restent à vous</h3>
               <p data-i18n="privacy.p1.body">
-                HomeDocs est conçu pour traiter vos documents localement autant que possible. Si vous activez iCloud, la synchronisation passe par CloudKit d’Apple.
+                Vos fichiers et le texte OCR sont chiffrés sur l’appareil (AES-GCM 256). Les clés sont protégées par le Trousseau iOS.
               </p>
             </div>
             <div class="privacy__box">
-              <h3 data-i18n="privacy.p2.title">Support</h3>
+              <h3 data-i18n="privacy.p2.title">Synchronisation (optionnelle)</h3>
               <p data-i18n="privacy.p2.body">
-                Lorsque vous contactez le support par email, vous nous envoyez les informations que vous choisissez de partager. Évitez d’envoyer des documents sensibles.
+                Si vous activez iCloud, HomeDocs synchronise via CloudKit pour retrouver vos documents sur vos appareils.
               </p>
             </div>
             <div class="privacy__box">
-              <h3 data-i18n="privacy.p3.title">Améliorations</h3>
+              <h3 data-i18n="privacy.p3.title">Partage sécurisé (.hdocs)</h3>
               <p data-i18n="privacy.p3.body">
-                Nous pouvons utiliser des retours anonymisés (ex : description de bug) pour améliorer l’app. Si vous voyez un comportement inattendu, contactez-nous.
+                Les exports .hdocs sont toujours chiffrés. Vous pouvez ajouter un mot de passe, mais même sans, le paquet n’est jamais exporté en clair.
               </p>
             </div>
           </div>
 
-          <p class="muted" data-i18n="privacy.disclaimer">
-            Remarque : adaptez ce texte à votre politique de confidentialité finale (selon vos features exactes).
-          </p>
+          <details class="policy">
+            <summary class="policy__summary" data-i18n="privacy.policy.summary">
+              Politique de confidentialité — HomeDocs
+            </summary>
+            <div class="policy__body">
+              <p class="tiny muted">
+                <span data-i18n="privacy.policy.updated">Dernière mise à jour : 20.12.2025</span>
+                <br />
+                <span data-i18n="privacy.policy.supportLabel">Contact support :</span>
+                <a class="footer__link" href="mailto:support@homedocs.app">support@homedocs.app</a>
+              </p>
+
+              <p class="muted" data-i18n="privacy.policy.preamble">
+                HomeDocs est une application de gestion de documents personnels (import, organisation, tags, recherche). La confidentialité et le chiffrement sont au cœur du produit.
+              </p>
+
+              <div class="policy__section">
+                <h3 data-i18n="privacy.policy.s1.title">1) Données traitées</h3>
+                <p class="muted" data-i18n="privacy.policy.s1.body">
+                  HomeDocs traite uniquement les données nécessaires aux fonctionnalités de l’app :
+                </p>
+                <ul class="list">
+                  <li data-i18n="privacy.policy.s1.li1">Documents importés (PDF, images, etc.)</li>
+                  <li data-i18n="privacy.policy.s1.li2">Métadonnées associées (nom, dates, tags, organisation)</li>
+                  <li data-i18n="privacy.policy.s1.li3">Texte extrait par OCR pour permettre la recherche</li>
+                </ul>
+              </div>
+
+              <div class="policy__section">
+                <h3 data-i18n="privacy.policy.s2.title">2) Chiffrement et sécurité</h3>
+                <p class="muted" data-i18n="privacy.policy.s2.body1">
+                  HomeDocs chiffre vos données au repos (stockage) :
+                </p>
+                <ul class="list">
+                  <li data-i18n="privacy.policy.s2.li1">
+                    Fichiers documents (PDF / images) : chiffrés côté app avec AES-GCM 256.
+                  </li>
+                  <li data-i18n="privacy.policy.s2.li2">
+                    Texte OCR : chiffré côté app avec AES-GCM 256 via un mécanisme d’“envelope encryption” (clé de chiffrement des données distincte, protégée par une clé maîtresse).
+                  </li>
+                  <li data-i18n="privacy.policy.s2.li3">
+                    Gestion des clés : les clés de chiffrement sont stockées dans le Trousseau iOS (Keychain) et protégées par les mécanismes de sécurité d’iOS. Selon la configuration de l’appareil, elles peuvent être synchronisées via iCloud Keychain.
+                  </li>
+                </ul>
+                <p class="muted" data-i18n="privacy.policy.s2.note">
+                  Remarque : HomeDocs ne peut déchiffrer vos contenus que sur des appareils disposant des clés nécessaires.
+                </p>
+              </div>
+
+              <div class="policy__section">
+                <h3 data-i18n="privacy.policy.s3.title">3) Synchronisation iCloud (optionnelle)</h3>
+                <p class="muted" data-i18n="privacy.policy.s3.body">
+                  Si vous activez la synchronisation, HomeDocs utilise CloudKit (iCloud) pour synchroniser les données entre vos appareils. La sécurité du transport et du stockage côté iCloud s’appuie sur les protections de sécurité d’Apple.
+                </p>
+              </div>
+
+              <div class="policy__section">
+                <h3 data-i18n="privacy.policy.s4.title">4) Partage et export (.hdocs)</h3>
+                <p class="muted" data-i18n="privacy.policy.s4.body1">
+                  HomeDocs permet d’exporter un paquet .hdocs contenant vos documents et métadonnées.
+                </p>
+                <ul class="list">
+                  <li data-i18n="privacy.policy.s4.li1">
+                    Le paquet .hdocs est toujours chiffré : HomeDocs crée d’abord une archive interne, puis chiffre l’ensemble avec AES-GCM 256.
+                  </li>
+                  <li data-i18n="privacy.policy.s4.li2">
+                    Avec mot de passe : une clé de chiffrement est dérivée à partir de votre mot de passe et d’un sel aléatoire.
+                  </li>
+                  <li data-i18n="privacy.policy.s4.li3">
+                    Sans mot de passe : le paquet reste chiffré via un mécanisme d’auto-chiffrement interne, afin de ne jamais produire d’export en clair.
+                  </li>
+                </ul>
+                <p class="muted" data-i18n="privacy.policy.s4.body2">
+                  Vous choisissez ensuite librement le canal de transfert (AirDrop, Mail, Messages, etc.). Le destinataire peut importer le paquet dans HomeDocs.
+                </p>
+              </div>
+
+              <div class="policy__section">
+                <h3 data-i18n="privacy.policy.s5.title">5) Collecte, publicité, revente</h3>
+                <ul class="list">
+                  <li data-i18n="privacy.policy.s5.li1">HomeDocs ne vend pas vos données.</li>
+                  <li data-i18n="privacy.policy.s5.li2">HomeDocs n’utilise pas vos documents à des fins publicitaires.</li>
+                </ul>
+              </div>
+
+              <div class="policy__section">
+                <h3 data-i18n="privacy.policy.s6.title">6) Support et diagnostics</h3>
+                <p class="muted" data-i18n="privacy.policy.s6.body1">
+                  Si vous contactez le support, vous pouvez partager des informations (ex. description du problème, modèle d’appareil, version iOS). Merci d’éviter d’envoyer des documents sensibles en pièce jointe sauf nécessité.
+                </p>
+                <p class="muted" data-i18n="privacy.policy.s6.body2">
+                  Selon vos réglages iOS et votre consentement, Apple peut également fournir des données de diagnostic (ex. rapports de crash) pour améliorer la stabilité.
+                </p>
+              </div>
+
+              <div class="policy__section">
+                <h3 data-i18n="privacy.policy.s7.title">7) Vos choix</h3>
+                <p class="muted" data-i18n="privacy.policy.s7.body">Vous pouvez :</p>
+                <ul class="list">
+                  <li data-i18n="privacy.policy.s7.li1">supprimer vos documents dans l’app,</li>
+                  <li data-i18n="privacy.policy.s7.li2">désactiver iCloud à tout moment dans les réglages iOS,</li>
+                  <li data-i18n="privacy.policy.s7.li3">désinstaller l’app (suppression des données locales).</li>
+                </ul>
+              </div>
+            </div>
+          </details>
         </div>
       </section>
 

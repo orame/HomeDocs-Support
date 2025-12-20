@@ -438,6 +438,41 @@ a:hover { text-decoration: none; }
 .privacy__box h3 { margin: 0 0 8px; font-size: 16px; }
 .privacy__box p { margin: 0; color: var(--muted); }
 
+.policy {
+  margin-top: 16px;
+  border-radius: var(--radius2);
+  border: 1px solid var(--stroke);
+  background: rgba(255, 255, 255, 0.03);
+  overflow: hidden;
+}
+.policy__summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 16px 16px;
+  font-weight: 800;
+}
+.policy__summary::-webkit-details-marker { display: none; }
+.policy__summary:focus-visible {
+  outline: 3px solid rgba(18, 214, 223, 0.5);
+  outline-offset: 2px;
+}
+.policy__body {
+  padding: 0 16px 16px;
+  border-top: 1px solid var(--stroke);
+}
+.policy__section {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.14);
+}
+@media (prefers-color-scheme: light) {
+  .policy__section { border-top-color: rgba(10, 16, 32, 0.16); }
+}
+.policy__section h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
 .contact {
   display: grid;
   grid-template-columns: 1fr;
