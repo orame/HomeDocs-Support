@@ -46,7 +46,7 @@
       "faq.subtitle": "Les réponses aux questions les plus courantes.",
       "faq.q1.q": "Comment importer un document ?",
       "faq.q1.a":
-        "Depuis l’écran Documents, utilisez le bouton d’ajout pour importer un PDF/image ou scanner avec l’appareil photo.",
+        "Depuis l’écran Documents, ouvrez le menu “…” puis choisissez : Importer depuis Fichiers, Importer depuis Photos, ou Scanner un document.",
       "faq.q2.q": "Pourquoi la synchronisation prend du temps ?",
       "faq.q2.a":
         "iCloud peut mettre un peu de temps selon le réseau, la taille des documents et la charge Apple. Laissez l’app ouverte quelques minutes et réessayez sur Wi‑Fi.",
@@ -179,7 +179,7 @@
       "faq.subtitle": "Answers to the most common questions.",
       "faq.q1.q": "How do I import a document?",
       "faq.q1.a":
-        "From the Documents screen, use the add button to import a PDF/image or scan with the camera.",
+        "From the Documents screen, open the “…” menu, then choose: Import from Files, Import from Photos, or Scan a document.",
       "faq.q2.q": "Why can syncing take time?",
       "faq.q2.a":
         "iCloud can take a little time depending on network, document size, and Apple’s load. Keep the app open for a few minutes and try again on Wi‑Fi.",
