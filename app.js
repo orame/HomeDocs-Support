@@ -23,16 +23,6 @@
       "hero.meta.k3": "iCloud",
       "hero.meta.v3": "Synchronisation via Apple",
 
-      "phone.title": "Sélectionner des documents",
-      "phone.section.sort": "Tri",
-      "phone.sort.title": "Titre",
-      "phone.sort.docDate": "Date du document",
-      "phone.sort.importDate": "Date d'import",
-      "phone.section.import": "Importer",
-      "phone.import.files": "Importer depuis Fichiers",
-      "phone.import.photos": "Importer depuis photos",
-      "phone.import.scan": "Scanner un document",
-
       "mock.title": "Recherche",
       "mock.search": "Contrat location 2025",
       "mock.tag1": "Important",
@@ -165,16 +155,6 @@
       "hero.meta.v2": "Your content stays yours",
       "hero.meta.k3": "iCloud",
       "hero.meta.v3": "Sync via Apple",
-
-      "phone.title": "Select documents",
-      "phone.section.sort": "Sort",
-      "phone.sort.title": "Title",
-      "phone.sort.docDate": "Document date",
-      "phone.sort.importDate": "Import date",
-      "phone.section.import": "Import",
-      "phone.import.files": "Import from Files",
-      "phone.import.photos": "Import from Photos",
-      "phone.import.scan": "Scan a document",
 
       "mock.title": "Search",
       "mock.search": "Rental contract 2025",
