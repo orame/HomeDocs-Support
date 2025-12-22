@@ -262,7 +262,7 @@ a:hover { text-decoration: none; }
 
 .hero__card { margin-top: 8px; }
 .phone {
-  width: min(420px, 100%);
+  width: min(315px, 100%);
   margin: 0 auto;
 }
 .phone__device {
