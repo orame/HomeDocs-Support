@@ -301,6 +301,13 @@
       el.textContent = interpolate(value, { year });
     });
 
+    const phoneBg = document.getElementById("phoneBg");
+    if (phoneBg) {
+      const fr = phoneBg.getAttribute("data-bg-fr");
+      const en = phoneBg.getAttribute("data-bg-en");
+      phoneBg.setAttribute("src", lang === "en" && en ? en : fr || phoneBg.getAttribute("src"));
+    }
+
     // Also adjust title + meta description for nicer sharing/indexing.
     document.title = lang === "en" ? "HomeDocs — Support" : "HomeDocs — Support";
     const metaDesc = document.querySelector('meta[name="description"]');
