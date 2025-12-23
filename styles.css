@@ -451,7 +451,7 @@ a:hover { text-decoration: none; }
   display: grid;
   place-items: center;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1;
   background: linear-gradient(135deg, rgba(18, 214, 223, 0.16), rgba(124, 58, 237, 0.14));
   border: 1px solid rgba(18, 214, 223, 0.22);
